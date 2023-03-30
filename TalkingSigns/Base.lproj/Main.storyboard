@@ -118,7 +118,7 @@
         <!--Translate-->
         <scene sceneID="x3q-ml-4Rq">
             <objects>
-                <viewController title="Translate" id="3YB-QK-oxX" customClass="TranslateViewController" customModule="TalkingSigns" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Translate" modalPresentationStyle="fullScreen" id="3YB-QK-oxX" customClass="TranslateViewController" customModule="TalkingSigns" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2J-yO-EV1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +195,7 @@
         <!--Backwards Translate View Controller-->
         <scene sceneID="OJx-h3-91k">
             <objects>
-                <viewController id="IWk-bL-5bF" customClass="backwardsTranslateViewController" customModule="TalkingSigns" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="IWk-bL-5bF" customClass="backwardsTranslateViewController" customModule="TalkingSigns" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JYx-Od-R2a">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,6 +256,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="31"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3YB-QK-oxX" kind="show" id="bK1-Vq-ZPb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8Z-m0-Wfx">
                                 <rect key="frame" x="69" y="86" width="60" height="46"/>
@@ -294,7 +297,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9b4-Gv-21e" customClass="galleryCell">
-                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQM-Op-F0V">
                                     <size key="itemSize" width="128" height="128"/>
@@ -466,6 +469,9 @@
             <point key="canvasLocation" x="4308" y="-525"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bK1-Vq-ZPb"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="TalkingSigns logo without background" width="657" height="379"/>
         <image name="arrow.up.arrow.down" catalog="system" width="128" height="97"/>
